@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dollystarr.com/sitemap.xml
