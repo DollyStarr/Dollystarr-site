@@ -1,11 +1,13 @@
-# Dolly Starr — Public Site
+# DollyStarr.com
 
-This repository contains the static website for **Dolly Starr™ / The Dollyhouse™**.
+This repo powers the Dolly Starr landing page (GitHub Pages).
 
-- Live site: https://dollystarr.com
-- Code license: MIT (see LICENSE)
-- Brand assets: All Rights Reserved (see ASSETS-LICENSE.md)
-- Trademarks: Common-law (see TRADEMARKS.md)
+## Edit me
+- Replace Discord and membership links with your real URLs.
+- Update schedule, Rooms, and pricing as needed.
+- All assets are in `/assets`. Colors are in `assets/css/style.css`.
 
-No secrets or private files are stored here. 
-For press or partnership inquiries: press@dollystarr.com
+## Deploy
+- Keep this repo **public**.
+- Settings → Pages → Source: Deploy from a branch → main → /(root).
+- Ensure a `CNAME` file contains `dollystarr.com`.
