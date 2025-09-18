@@ -681,6 +681,29 @@
       padding: 2.5rem 1rem;
     }
 
+    .schedule-wrap{<!-- Dollyhouse Live Schedule -->
+<section id="live-schedule" class="schedule-section">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=VT323&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- Dollyhouse Theme ---------- */
+    :root{
+      --dolly-hot-pink:#ff69b4;
+      --dolly-purple:#c7b7ff;          /* new purple outline color */
+      --soft-ink:#444444;
+      --neon-vibe:#39ffcc;
+      --milk:#ffffff;                  /* pure white background */
+      --bg:#f7fbff;
+    }
+
+    .schedule-section{
+      background: linear-gradient(180deg, #fff0fb 0%, #f7fbff 100%);
+      padding: 2.5rem 1rem;
+    }
+
     .schedule-wrap{
       max-width: 1100px;
       margin: 0 auto;
@@ -710,10 +733,10 @@
     }
 
     .schedule-day{
-      background: var(--frost);
-      border-radius: 15px;
+      background: var(--milk);                   /* white background */
+      border-radius: 25px;                       /* ✨ rounder corners */
       padding: 1.25rem 1.25rem 1rem;
-      border: 1px solid var(--dial-up-blue);
+      border: 2px solid var(--dolly-purple);     /* soft purple outline */
       backdrop-filter: blur(6px);
       transition: transform .3s ease, box-shadow .3s ease;
     }
@@ -751,20 +774,18 @@
       font-size: .9rem;
     }
 
-    /* small sparkle divider */
     .sparkle{
       height:1px; width:100%;
-      background: linear-gradient(90deg, transparent, var(--dial-up-blue), transparent);
+      background: linear-gradient(90deg, transparent, var(--dolly-purple), transparent);
       margin:.75rem 0 1rem;
     }
 
-    /* optional dark-ish mode if your site has a dark background */
     @media (prefers-color-scheme: dark){
       .schedule-section{ background: linear-gradient(180deg, #2a2230 0%, #16212b 100%); }
       .schedule-sub{ color:#eaeaea; }
-      .schedule-day{ background: rgba(255,255,255,.08); border-color: rgba(167,212,255,.4); }
+      .schedule-day{ background: rgba(255,255,255,.08); border-color: rgba(199,183,255,.4); }
       .day-platforms{ color:#cfd6dc; }
-      .sparkle{ background: linear-gradient(90deg, transparent, rgba(167,212,255,.6), transparent); }
+      .sparkle{ background: linear-gradient(90deg, transparent, rgba(199,183,255,.6), transparent); }
     }
   </style>
 
@@ -773,7 +794,7 @@
     <p class="schedule-sub">All times CST • Follow <strong>@DollyStarr</strong> • Join the Discord for surprise pop-ups 💖</p>
 
     <div class="schedule-grid">
-      <!-- MON -->
+      <!-- EXAMPLE DAYS -->
       <article class="schedule-day">
         <h3 class="day-name">✨ Monday</h3>
         <div class="sparkle"></div>
@@ -781,56 +802,15 @@
         <p class="day-time">9:00–10:00 PM — “Room Reset + Cozy Chat”</p>
       </article>
 
-      <!-- TUE -->
-      <article class="schedule-day">
-        <h3 class="day-name">🎀 Tuesday</h3>
-        <div class="sparkle"></div>
-        <p class="day-platforms">TikTok • YouTube Shorts</p>
-        <p class="day-time">8:30 PM — Outfit Reveal + Q&A</p>
-      </article>
-
-      <!-- WED -->
-      <article class="schedule-day">
-        <h3 class="day-name">🪩 Wednesday</h3>
-        <div class="sparkle"></div>
-        <p class="day-platforms">Discord Event</p>
-        <p class="day-time">8:00 PM — Dolly Card Teasers + Polls</p>
-      </article>
-
-      <!-- THU -->
-      <article class="schedule-day">
-        <h3 class="day-name">💿 Thursday</h3>
-        <div class="sparkle"></div>
-        <p class="day-platforms">Instagram Live • TikTok</p>
-        <p class="day-time">9:00 PM — BTS: Building the Dollyhouse</p>
-      </article>
-
-      <!-- FRI -->
       <article class="schedule-day">
         <h3 class="day-name">💘 Friday</h3>
         <div class="sparkle"></div>
         <p class="day-platforms">TikTok Live • Discord VIP</p>
         <p class="day-time">9:30 PM — Mini Drop Night (VIP early!)</p>
       </article>
-
-      <!-- SAT -->
-      <article class="schedule-day">
-        <h3 class="day-name">🌸 Saturday</h3>
-        <div class="sparkle"></div>
-        <p class="day-platforms">Reels • Shorts • Discord</p>
-        <p class="day-time">Daytime Pop-Ups (watch Discord)</p>
-      </article>
-
-      <!-- SUN -->
-      <article class="schedule-day">
-        <h3 class="day-name">🫧 Sunday</h3>
-        <div class="sparkle"></div>
-        <p class="day-platforms">Instagram • YouTube</p>
-        <p class="day-time">Soft Reset + Photo Drop</p>
-      </article>
     </div>
 
-    <p class="weekend-note">Schedule may sparkle-shift ✨ — join Discord for live updates!</p>
+    <p class="weekend-note">Schedule may sparkle-shift, to allow this purrfect Dolly her beauty rest ✨ — join Discord for live updates!</p>
   </div>
 </section>
 
