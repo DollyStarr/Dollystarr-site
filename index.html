@@ -660,15 +660,62 @@
     <section class="section schedule" id="live">
       <div class="kicker">live schedule</div>
       <h2>✧ when 2 catch me ✧</h2>
-      <table aria-label="Live stream schedule">
-        <thead><tr><th>day ♡</th><th>time (CT)</th><th>vibe check ★</th></tr></thead>
-        <tbody>
-          <tr><td>monday</td><td>8:00–9:00 pm</td><td>cozy Q&A hangouts ✧</td></tr>
-          <tr><td>wednesday</td><td>8:00–9:00 pm</td><td>room setup & BTS</td></tr>
-          <tr><td>friday</td><td>8:30–9:30 pm</td><td>new room reveals ♡</td></tr>
-        </tbody>
-      </table>
-    </section>
+      .schedule-title {
+            font-family: 'VT323', monospace;
+            font-size: 1.8rem;
+            color: var(--dolly-hot-pink);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .schedule-day {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 1px solid var(--dial-up-blue);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .schedule-day:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(167, 212, 255, 0.3);
+        }
+
+        .day-name {
+            font-family: 'Fredoka One', sans-serif;
+            font-size: 1.2rem;
+            color: var(--dolly-hot-pink);
+            margin-bottom: 0.5rem;
+        }
+
+        .day-platforms {
+            font-size: 0.9rem;
+            color: var(--soft-ink);
+            margin-bottom: 0.5rem;
+        }
+
+        .day-time {
+            font-family: 'VT323', monospace;
+            font-size: 1.1rem;
+            color: var(--neon-vibe);
+            font-weight: bold;
+        }
+
+        .weekend-note {
+            text-align: center;
+            margin-top: 1rem;
+            font-style: italic;
+            color: var(--dolly-hot-pink);
+            font-size: 0.9rem;
+        }
 
     <section class="section newsletter" id="contact">
       <div class="kicker">stay connected</div>
